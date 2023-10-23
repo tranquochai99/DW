@@ -1,0 +1,39 @@
+
+
+--1. total Cost, Profit, Revenue by year
+select {[measures].[Cost], [Profit], [Revenue]} on columns,
+	nonempty ([Dim Time].[Year].[year]) on rows
+from GK_OLAP_view
+go
+
+
+--2. total order quantity by product and age group
+select nonempty([Dim Product]. [Product]. [Product]) on columns,
+	nonempty([Dim Customer]. [Age Group]. [Age Group]) on rows
+from GK_OLAP_view
+where measures.[Order Quantity]
+
+--3 total profit by country and quater
+select nonempty([Dim Location]. [country]. [country]) on columns,
+	nonempty([Dim Time]. [Quater]. [Quater]) on rows
+from GK_OLAP_view
+where measures.[Profit]
+
+--4 total unit cost and unit price by product
+select {measures.[unit cost], [unit price]} on columns,
+	nonempty([Dim Product]. [Product]. [product]) on rows
+from GK_OLAP_view
+
+
+--5 total order quantity by state and month 
+select nonempty([Dim Location]. [State]. [State]) on columns,
+	nonempty([Dim Time]. [Month]. [Month]) on rows 
+from GK_OLAP_view 
+where measures.[Order Quantity] 
+
+
+--6 total order quantity by priduct and country
+select nonempty([Dim Product].[product].[product]) on columns,
+	nonempty([Dim location].[country].[country]) on rows
+from GK_OLAP_view
+where measures.[order quantity]

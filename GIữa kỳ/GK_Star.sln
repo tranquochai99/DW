@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "GK_Star", "GK_Star\GK_Star.dtproj", "{B7253B24-A2E9-4951-948C-8F7DA1FEF084}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7253B24-A2E9-4951-948C-8F7DA1FEF084}.Development|Default.ActiveCfg = Development
+		{B7253B24-A2E9-4951-948C-8F7DA1FEF084}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9A84E9A-54B8-4C2B-A4C0-C87769DECEFF}
+	EndGlobalSection
+EndGlobal
